@@ -1,0 +1,12 @@
+Abhishek,Quiz,23.0
+Abhishek,Assignment,34.0
+Abhishek,Finals,55.0
+wer,Quiz,23.0
+wer,Assignment,34.0
+wer,Finals,55.0
+Prgram342,Quiz,34.0
+Prgram342,Assignment,45.0
+Prgram342,Finals,23.0
+Prgram,Quiz,34.0
+Prgram,Assignment,45.0
+Prgram,Finals,23.0

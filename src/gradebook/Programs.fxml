@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?> 
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.* ?>
+
+<GridPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gradebook.ProgramsController">
+    <stylesheets>
+        <URL value="@programs.css"/>
+    </stylesheets>
+    
+    
+        
+    <padding> 
+        <Insets top="10" bottom="20" right="30" left="30" /> 
+    </padding>
+    
+    <columnConstraints>
+    <ColumnConstraints percentWidth="50.0" />
+    <ColumnConstraints percentWidth="50.0" />
+    </columnConstraints>
+    
+    <children>
+    <ImageView GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="imgView" fitWidth="150" fitHeight="120"  preserveRatio="true" GridPane.halignment="LEFT" >
+    <image>
+       
+        <Image url="@amelie-niklas-ohlrogge-74QmIJDTD-c-unsplash.jpg" />
+    </image>
+    </ImageView>
+    
+        <ImageView GridPane.rowIndex="0" GridPane.columnIndex="1"  fitWidth="150" fitHeight="120"  preserveRatio="true" GridPane.halignment="RIGHT" >
+    <image>
+       
+        <Image url="@biel-morro-kcKiBcDTJt4-unsplash.jpg" />
+    </image>
+    </ImageView>
+        
+    <Label text="Input Information" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"  GridPane.halignment="CENTER" />
+    
+    <Label text="Course" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="LEFT">
+    <GridPane.margin>
+      <Insets  left="80" top="20" />
+    </GridPane.margin> 
+    </Label>
+    <TextField fx:id="txtcourse" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT" >
+    <GridPane.margin>
+             <Insets  left="150" top="20" right="20" />
+    </GridPane.margin>  
+        
+    </TextField>
+    
+   
+    
+    <Label text="Quiz Grade" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+    <GridPane.margin>
+      <Insets   left="10" top="20" />
+    </GridPane.margin> 
+    </Label>
+    <TextField fx:id="txtquiz" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="RIGHT" >
+    <GridPane.margin>
+             <Insets  left="110" top="20" right="70"/>
+    </GridPane.margin>  
+        
+    </TextField>
+    
+    
+    <Label text="Assignment Grade" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="LEFT">
+    <GridPane.margin>
+      <Insets  left="8" top="20" />
+    </GridPane.margin> 
+    </Label>
+    <TextField fx:id="txtasmt" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="RIGHT" >
+    <GridPane.margin>
+             <Insets  left="150" top="20" right="20" />
+    </GridPane.margin>  
+        
+    </TextField>
+        
+    
+    <Label text="Final Grade" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+    <GridPane.margin>
+      <Insets   left="10" top="20" />
+    </GridPane.margin> 
+    </Label>
+    <TextField fx:id="txtfinal" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="RIGHT" >
+    <GridPane.margin>
+             <Insets  left="110" top="20" right="70"/>
+    </GridPane.margin>  
+        
+    </TextField>
+        
+        
+    <Button fx:id="btsubmit" onAction="#submit"  mnemonicParsing="false"
+
+            text="Submit" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+        <GridPane.margin>
+             <Insets top="20" />
+        </GridPane.margin> 
+    </Button>     
+
+        
+ <Label text="View Grade Info." GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2"  GridPane.halignment="CENTER" >
+    <GridPane.margin>
+       <Insets top="10" />
+    </GridPane.margin> 
+ </Label>
+
+    <ComboBox fx:id="cmb" GridPane.rowIndex="6" GridPane.columnIndex="0" >  
+      <GridPane.margin>
+       <Insets top="10" left="100" bottom="150" />
+    </GridPane.margin> 
+    </ComboBox>
+   
+    <TextArea fx:id="txtarea" GridPane.rowIndex="6" GridPane.columnIndex="0"  GridPane.columnSpan="2" prefColumnCount="25" prefRowCount="8">
+    <GridPane.margin>
+       <Insets top="10" left="220" />
+    </GridPane.margin> 
+    </TextArea>
+        
+    <Region GridPane.rowIndex="4"  GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="hr" >
+     <GridPane.margin>
+       <Insets top="10"  />
+    </GridPane.margin> 
+    </Region >  
+        
+
+    </children>
+   
+</GridPane>
